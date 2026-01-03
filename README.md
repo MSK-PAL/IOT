@@ -8,6 +8,23 @@ A rendszer hőmérséklet- és páratartalom-adatokat mér, majd az eredményeke
 - Arduino UNO Rev3
 - DHT22 (AM2302) hőmérséklet- és páratartalom szenzor
 
+## Hardver összeállítás
+
+### Teljes rendszer
+![Teljes rendszer](images/setup_overview.jpg)
+
+### Szenzor bekötése
+![Szenzor bekötése](images/sensor_wiring.jpg)
+
+### Tápfeszültség bekötése
+![5V és GND bekötés](images/pwr_gnd_wiring.jpg)
+
+### Adatvezeték
+![DATA vezeték (D2)](images/data_wiring.jpg)
+
+### USB eszköz átadása WSL-nek
+![USB átadás WSL-nek](images/usb_port_attachment_to_wsl.jpg)
+
 ### Szenzor bekötése
 | Szenzor pin | Arduino pin |
 |------------|-------------|
@@ -33,17 +50,20 @@ A mérés és a feltöltés systemd timer segítségével automatizált:
 - napi egyszeri automatikus GitHub push
 - 3 nap után automatikus leállás
 
-## Könyvtárstruktúra
 IOT/
 ├── arduino/
-│ ├── hello_serial/
-│ └── dht22_meres/
+│   ├── hello_serial/
+│   └── dht22_meres/
 ├── scripts/
-│ ├── measure_once.sh
-│ └── push_daily.sh
+│   ├── measure_once.sh
+│   └── push_daily.sh
 ├── docs/
-│ └── meresek.csv
+│   └── meresek.csv
+├── images/
+│   ├── setup_overview.jpg
+│   ├── sensor_wiring.jpg
+│   ├── pwr_gnd_wiring.jpg
+│   ├── data_wiring.jpg
+│   └── usb_port_attachment_to_wsl.jpg
 └── README.md
-
-
 
