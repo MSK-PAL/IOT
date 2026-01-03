@@ -51,7 +51,7 @@ A mérés és a feltöltés systemd timer segítségével automatizált:
 - 3 nap után automatikus leállás
 
 ## Könyvtárstruktúra
-
+```
 IOT/
 ├── arduino/
 │ ├── hello_serial/
@@ -68,3 +68,5 @@ IOT/
 │ ├── data_wiring.jpg
 │ └── usb_port_attachment_to_wsl.jpg
 └── README.md
+```
+
